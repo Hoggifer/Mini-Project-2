@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request a Catalogue!</title>
+        <link rel="Shortcut Icon" href="Images/Hogg Website.png" type="image/x-icon">
+    
+    <style>
+
+        .textBox {
+            background-color: black;
+            color:white;
+            margin-left: 0px;
+            margin-right: 0px;
+            top: 100px;
+        }
+
+        .pBanner {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .pBanner {
+            min-height: 100px;
+            background-image: url("Images/WhiteMarble.jpg");
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: black;
+        }
+
+        input {
+            width: 25%;
+            font-size: 30px;
+        }
+
+        select {
+            width: 25%;
+            font-size: 30px;
+        }
+
+        input[type=submit] {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a:link {
+            color:white;
+            background-color: transparent;
+            }
+
+        a:visited {
+            color: white;
+            background-color: transparent;
+            }
+
+    </style>
+    </head>
+    
+    <body>
+        <img src="Images/Website Banner.png" style="width: 100%;">
+        
+        <div class="pBanner"></div>
+        
+        <div class="textBox">
+            <H1 style="text-align: center; font-size: 50px;">Order Form:</H1>
+
+            <p style="font-size: 30px; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                In order to submit an order, insert your information below. From your information, we will
+                send a catalogue & order form to the address provided. Please ensure your information is 
+                correct! If you think you've made a mistake, please visit <a href="">this page</a> to edit or delete any submissions.
+            </p>
+
+            <form action="Add-User-Information.php" method="POST" style="font-size: 35px; text-align: center;">
+            
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Prefix: <select name="Prefix" required>
+                        <option value=" " selected></option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Other">Other</option>
+                        </select>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    First Name: <input name="First_Name" required>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Middle Initial: <input name="Middle_Initial" maxlength="1">
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Last Name: <input name="Last_Name" required>
+    
+                </label>
+    
+                <br />            
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Email: <input name="Email" id="email" required>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    State: <select name="State" required>
+                        <option value=" " selected></option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>    
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho" >Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada" >Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virgina">West Virginia</option>
+                        <option value="Wisconsin">Wisconson</option>
+                        <option value="Wyoming">Wyoming</option>
+                        </select>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Address: <input name="Address" required>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    City: <input name="City" required>
+    
+                </label>
+    
+                <br />
+    
+                <label>
+    
+                    <!--Use the name attribute to refer in the PHP code-->
+    
+                    Zip Code: <input name="Zip_Code" maxlength="5" required>
+    
+                </label>
+                <br />
+                <br>
+                <input type="submit">
+                <br>
+                <br>
+                <H2 style="text-align: center; font-size: 20px;"><a href="HoggWebsite.html">Click here to return to home page!</a></H2>
+                <br>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>
